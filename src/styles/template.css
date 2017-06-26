@@ -1,0 +1,54 @@
+*{margin:0;padding:0;font-family: '微软雅黑';box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none;color:#333;}
+
+/*login的样式*/
+.wrap{background: url(../images/bj.jpg) no-repeat;background-size: cover;position: absolute;left:0;top:0;bottom:0;right:0;}
+.box{width: 300px;height: 280px;border:1px solid #eee;position: absolute;top:50%;left:50%;transform: translate(-150px,-140px);background:lightblue;}
+.user,.psd{width: 270px;height: 40px;margin:15px 15px;font-size: 18px;text-indent: 1em;}
+.user{margin-top:40px;}
+.btn{width: 270px;height: 50px;margin:10px 15px;}
+input::-webkit-input-placeholder{
+	font-size: 16px;
+}
+.err{
+	display: none;
+	height: 30px;
+	line-height: 30px;
+	background-color: red;
+	text-align: center;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	margin-top: -15px;
+	margin-left: -50px;
+	 z-index: 1;
+}
+.e_user,.e_psd{width: 100%;text-indent: 1em;color:red;}
+
+/*main的样式*/
+.left{width: 200px;position: absolute;top:0;bottom:0;background:#eee;border-right: 3px solid #ccc;}
+.title,.lesson,.people,.quit{width: 100%;height: 40px;line-height: 40px;background:#eee;border-bottom: 1px solid #aaa;text-align: center;}
+.lesson,.people{background:#0d5aa8;color:#fff;height: 50px;line-height: 50px;}
+.lesson:hover,.people:hover{background:#3b90e5;cursor:pointer;}
+.quit{border:none;position: absolute;bottom: 0;background:#0d5aa8;color:#fff;letter-spacing: 20px;font-size: 18px;}
+.quit:hover{cursor:pointer;background:#3b90e5;}
+.content{position: absolute;left: 200px;top:0;bottom:0;right:0;}
+
+/*lesson的样式*/
+.course{margin-top:20px;}
+.add_course,.add_name{margin:0 0 10px 0;float:left;width: 20%;height: 40px;line-height: 40px;text-align: center;background: #09b09e;border:none;color:#fff;font-size: 20px;}
+.add_course:hover,.add_name:hover{background: #29d8c5;cursor:pointer;}
+.c_input,.n_input,.userid{width:40%;float: left;height: 40px;margin:0 0 10px 0;text-indent: 10px;}
+
+
+.tab{width: 95%;text-align: center;margin:0 auto;border-collapse:collapse;}
+.title_list{background:#ccc;height: 30px;line-height: 30px;width: 100%;}
+.tbody td{border:1px solid #666;height: 30px;line-height: 30px;}
+
+
+.add{width:150px;height: 120px;background: #7fffd4;border:1px solid green;display:none;
+	position: absolute;top:0;left:72%; }
+
+

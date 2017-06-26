@@ -1,0 +1,36 @@
+{
+  "name": "angularjsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack -w --display-error-details --progress --profile --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@54.223.34.209:10022/web_team/AngularjsDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.5.6",
+    "angular-route": "1.5.6",
+    "angular-ui-router": "0.4.2",
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.27.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "file-loader": "^0.10.1",
+    "jquery": "^3.1.1",
+    "ng-annotate": "^1.2.1",
+    "ng-annotate-loader": "^0.2.0",
+    "q": "^1.4.1",
+    "raw": "^0.1.4",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.13.3"
+  }
+}

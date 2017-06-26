@@ -1,0 +1,40 @@
+<div class="course">
+	<textarea class="c_input" wrap="soft" maxlength="50" placeholder="课程最多50个字符" ng-model = "course"></textarea>
+	<select class="userid" ng-model = "user" ng-options="x.realname for x in data">
+		<option value></option>
+	</select>
+	<button class="add_course" ng-click="addCourse()">添加课程</button>
+	<table cellpadding="0" cellspacing="0" border="0" class='tab'>
+		<thead>
+			<tr class="title_list">
+				<td>课程名</td>
+				<td>主讲人</td>
+				<td>状态</td>
+				<td>培训时间</td>
+				<td>编辑</td>
+			</tr>
+		</thead>
+		<tbody class="tbody">
+			<tr ng-repeat = "x in datas">
+				<td>{{x.title}}</td>
+				<td>{{x.realname}}</td>
+				<td id="status">{{x.status==1?'已结束':'待进行'}}</td>
+				<td id="trainingtime">{{x.trainingtime}}</td>
+				<td class="td">
+					<input 
+					style={{x.status==1?"display:none":"display:inline"}} 
+					type="button" value="更新" ng-click="update(this)" id="update">
+					<input 
+					style={{x.status==1?"display:none":"display:inline"}}
+					type="button" value="删除" ng-click="delcourse(this)" id="del">
+				</td>
+			</tr>
+		</tbody>		
+	</table>
+	<div class="add">
+		<p>培训时间</p>
+		<input type="date" name="" class="date">
+		<p>课程结束后才能评分</p>
+		<input type="button" name="" value="结束此课程" id="finish" ng-click="finish()">
+	</div>
+</div>
